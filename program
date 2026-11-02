@@ -1,0 +1,4 @@
+def get_range():
+	DIGIT_RANGE = input("What is the digit range you would like?")
+	TOP_RANGE = int(DIGIT_RANGE)
+  
