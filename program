@@ -1,4 +1,24 @@
-def get_range():
-	DIGIT_RANGE = input("What is the digit range you would like?")
-	TOP_RANGE = int(DIGIT_RANGE)
-  
+import random
+
+DIGIT_RANGE = int(input("What is your digit range? (starting from 0)"))
+
+def generate_number():
+    while True:
+        digit = DIGIT_RANGE + 1
+        numbers = range(1,digit)
+        number = random.choice(numbers)
+        print(f"Your number: {number}")
+
+        again = input("Whould you like another number? (Y/N)").upper().strip()
+
+        if again == "Y":
+            continue
+        elif again == "N":
+            break
+        else:
+            print("Invalid Input: Please Type either Yes or No")
+    
+        
+
+
+generate_number()
