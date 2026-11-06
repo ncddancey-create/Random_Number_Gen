@@ -1,4 +1,9 @@
 def get_range():
-	DIGIT_RANGE = input("What is the digit range you would like?")
-	TOP_RANGE = int(DIGIT_RANGE)
-  
+	while True
+		try:
+			DIGIT_RANGE = int(input("What is the digit range you would like? (starting from 0"))
+			return DIGIT_RANGE
+
+		except ValueError:
+			print("Invlaid input please enter a number in digit form.")
+		
